@@ -1,5 +1,5 @@
 from const import TARGET_DATA
-import uuid, shutil, os
+import shutil, os
 
 def analyze_repo(path, output_path, repo_url, commit_hash):
     from git import Repo
@@ -25,7 +25,7 @@ if __name__ == '__main__':
         semester = val['semester']
         commit_hash = val['hash_commit']
         output_path = '../data/{}'.format(semester)
-        clone_path = '{}-{}'.format(semester, uuid.uuid4().hex)
+        clone_path = semester
 
         try:
             analyze_repo(clone_path, output_path, repo_url, commit_hash)
