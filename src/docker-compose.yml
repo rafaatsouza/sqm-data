@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  mining:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80 
+    volumes:
+      - ../data:/data
