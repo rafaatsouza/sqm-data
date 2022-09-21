@@ -7,8 +7,10 @@ def analyze_repo(path, output_path, repo_url, commit_hash):
     repo = Repo.clone_from(repo_url, path, no_checkout=True)
     repo.git.checkout(commit_hash)
 
-    if not os.path.exists(output_path):
-        os.makedirs(output_path)
+    if os.path.exists(output_path):
+        shutil.rmtree(output_path)
+
+    os.makedirs(output_path)
 
     instruction = 'java -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar {}'.format(path)
     os.system(instruction)
