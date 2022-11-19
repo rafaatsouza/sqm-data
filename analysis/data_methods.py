@@ -76,6 +76,11 @@ def get_metrics_analysis(df, metrics_by_class, metrics_by_method):
 
 
 def get_data_for_top_by_metric(analysis, target, top=10):
+    def __get_tuple_by_target(r, target):
+        if target == 'method':
+            return (r['class'], r['method'][:r['method'].find('/')] if r['method'].find('/') >= 0 else r['method'], r['metric'])
+        return (r['class'], r['metric'])
+
     result = {}
     if target not in ['class', 'method']:
         return result
@@ -84,8 +89,8 @@ def get_data_for_top_by_metric(analysis, target, top=10):
         if target in metric_content:
             result[metric] = {'avg': metric_content[target]['default']['avg'], 'stdev': metric_content[target]['default']['std']}
 
-            not_test_records = [(r[target], r['metric']) for r in metric_content[target]['default']['records']]
-            not_test_records = sorted(not_test_records, key=lambda x: x[1], reverse=True)
+            not_test_records = [__get_tuple_by_target(r, target) for r in metric_content[target]['default']['records']]
+            not_test_records = sorted(not_test_records, key=lambda x: x[len(x)-1], reverse=True)
 
             if len(not_test_records) > top:
                 not_test_records = not_test_records[:top]
