@@ -61,13 +61,6 @@ file,class,method,variable,usage
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/routes/Setup.java,br.ufmg.engsoft.reprova.routes.Setup,"routes/2[br.ufmg.engsoft.reprova.mime.json.Json,br.ufmg.engsoft.reprova.database.QuestionsDAO]",questions,1
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/routes/Setup.java,br.ufmg.engsoft.reprova.routes.Setup,"routes/2[br.ufmg.engsoft.reprova.mime.json.Json,br.ufmg.engsoft.reprova.database.QuestionsDAO]",json,2
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/routes/Setup.java,br.ufmg.engsoft.reprova.routes.Setup,"routes/2[br.ufmg.engsoft.reprova.mime.json.Json,br.ufmg.engsoft.reprova.database.QuestionsDAO]",questionsDAO,2
-/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,theme/1[java.lang.String],theme,2
-/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,build/0,entry,1
-/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,id/1[java.lang.String],id,2
-/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,pvt/1[boolean],pvt,2
-/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,statement/1[java.lang.String],statement,2
-/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,description/1[java.lang.String],description,2
-/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,"record/1[java.util.Map<br.ufmg.engsoft.reprova.model.Semester,java.util.Map<java.lang.String,java.lang.Float>>]",record,2
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/database/QuestionsDAO.java,br.ufmg.engsoft.reprova.database.QuestionsDAO,parseDoc/1[br.ufmg.engsoft.reprova.database.Document],question,2
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/database/QuestionsDAO.java,br.ufmg.engsoft.reprova.database.QuestionsDAO,parseDoc/1[br.ufmg.engsoft.reprova.database.Document],e,2
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/database/QuestionsDAO.java,br.ufmg.engsoft.reprova.database.QuestionsDAO,parseDoc/1[br.ufmg.engsoft.reprova.database.Document],document,2
@@ -89,6 +82,13 @@ file,class,method,variable,usage
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/database/QuestionsDAO.java,br.ufmg.engsoft.reprova.database.QuestionsDAO,add/1[br.ufmg.engsoft.reprova.model.Question],id,4
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/database/QuestionsDAO.java,br.ufmg.engsoft.reprova.database.QuestionsDAO,"QuestionsDAO/2[br.ufmg.engsoft.reprova.database.Mongo,br.ufmg.engsoft.reprova.mime.json.Json]",json,3
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/database/QuestionsDAO.java,br.ufmg.engsoft.reprova.database.QuestionsDAO,"QuestionsDAO/2[br.ufmg.engsoft.reprova.database.Mongo,br.ufmg.engsoft.reprova.mime.json.Json]",db,2
+/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,theme/1[java.lang.String],theme,2
+/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,build/0,entry,1
+/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,id/1[java.lang.String],id,2
+/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,pvt/1[boolean],pvt,2
+/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,statement/1[java.lang.String],statement,2
+/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,description/1[java.lang.String],description,2
+/src/2019-01/src/java/br/ufmg/engsoft/reprova/model/Question.java,br.ufmg.engsoft.reprova.model.Question$Builder,"record/1[java.util.Map<br.ufmg.engsoft.reprova.model.Semester,java.util.Map<java.lang.String,java.lang.Float>>]",record,2
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/Reprova.java,br.ufmg.engsoft.reprova.Reprova,main/1[java.lang.String[]],args,0
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/Reprova.java,br.ufmg.engsoft.reprova.Reprova,main/1[java.lang.String[]],json,2
 /src/2019-01/src/java/br/ufmg/engsoft/reprova/Reprova.java,br.ufmg.engsoft.reprova.Reprova,main/1[java.lang.String[]],db,1
