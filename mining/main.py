@@ -21,11 +21,11 @@ def analyze_repo(path, output_path, repo_url, commit_hash):
 
 if __name__ == '__main__':
     repo_url = TARGET_DATA['repo_url']
-    for val in TARGET_DATA['commits_and_semesters']:
-        semester = val['semester']
+    for val in TARGET_DATA['commits_and_identifiers']:
+        identifier = val['identifier']
         commit_hash = val['hash_commit']
-        output_path = '../data/{}'.format(semester)
-        clone_path = semester
+        output_path = '../data/{}'.format(identifier)
+        clone_path = identifier
 
         try:
             analyze_repo(clone_path, output_path, repo_url, commit_hash)
@@ -35,7 +35,7 @@ if __name__ == '__main__':
             if os.path.exists(output_path):
                 shutil.rmtree(output_path)
         else:
-            print('Success for {}!'.format(semester))
+            print('Success for {}!'.format(identifier))
         finally:
             if os.path.exists(clone_path):
                 shutil.rmtree(clone_path)

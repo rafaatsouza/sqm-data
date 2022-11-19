@@ -8,7 +8,7 @@ class VisualizationMethods:
             ax.boxplot(data_dict[column], positions=[position], flierprops=dict(markerfacecolor='g', marker='D'))
 
         ax.set_xticks(range(position+1))
-        ax.set_xticklabels(columns)
+        ax.set_xticklabels(columns, rotation=20, ha='right')
         ax.set_xlim(xmin=-0.5)
         if use_log_as_yscale_out:
             ax.set_yscale('log')

@@ -1,17 +1,32 @@
-import os, re
+import re
 import pandas as pd
 import numpy as np
 
 
+def get_dataframes_dict_by_identifier(identifier):
+    return {
+        'classes': pd.read_csv('../data/{}/class.csv'.format(identifier)),
+        'fields': pd.read_csv('../data/{}/field.csv'.format(identifier)),
+        'methods': pd.read_csv('../data/{}/method.csv'.format(identifier)),
+        'variables': pd.read_csv('../data/{}/variable.csv'.format(identifier)),
+    }
+
+
 def get_dataframes():
     return {
-        p: {
-            'classes': pd.read_csv('../data/{}/class.csv'.format(p)),
-            'fields': pd.read_csv('../data/{}/field.csv'.format(p)),
-            'methods': pd.read_csv('../data/{}/method.csv'.format(p)),
-            'variables': pd.read_csv('../data/{}/variable.csv'.format(p)),
-        }
-        for p in os.listdir('../data/')
+        i: get_dataframes_dict_by_identifier(i)
+        for i in ['2019-01', '2020-01', '2020-02', '2022-01', '2022-02']
+    }
+
+
+def get_refacts_dataframes():
+    return {
+        i: get_dataframes_dict_by_identifier(i)
+        for i in [
+            '01-command', '02-questions', '03-template', '04-adjusted', 
+            '05-fix', '06-fix', '07-fix', '08-fix', '09-code-test', 
+            '10-code-test', '11-code-test'
+        ]
     }
 
 
