@@ -5,7 +5,7 @@ TARGET_DATA = {
         { 'identifier': '2020-01', 'hash_commit': 'c3c9afd85e71a53846016e31bf9e65f6cf15ecf9' },  # Oct 14, 2020
         { 'identifier': '2020-02', 'hash_commit': '74fcb9ee883aac8e46510ae6af005934af215968' },  # Jan 22, 2021
         { 'identifier': '2022-01', 'hash_commit': '11e62864d01bde4af32a184c6bf3ece5e0a0dc51' }, # Feb 6, 2022
-        { 'identifier': '2022-02', 'hash_commit': '085ea49ed7db5478076ce5f4502d6f1620f42fc4'}, # current
+        { 'identifier': '2022-02', 'hash_commit': '4325d4bf0cb61134fef0ea2ffbfe435608a524d2'}, # current
         { 'identifier': '01-command', 'hash_commit': '3233bd629162baf1cecb8e23fdb90200e6df8f20' },  # Feb 6, 2022
         { 'identifier': '02-questions', 'hash_commit': '6ee94c2f3501fd0ff7a2cebca1f972a5b4a98750' },  # Feb 6, 2022
         { 'identifier': '03-template', 'hash_commit': '6faa2454b1ed07a06038f67ea95b539023d51f2e' },  # Feb 6, 2022
