@@ -20,13 +20,23 @@ def get_dataframes():
 
 
 def get_refacts_dataframes():
+    keys_and_identifiers = [
+        ('01-refact', '01-command'),
+        ('02-refact', '02-questions'),
+        ('03-refact', '03-template'),
+        ('04-refact', '04-adjusted'),
+        ('05-refact', '05-fix'),
+        ('06-refact', '06-fix'),
+        ('07-refact', '07-fix'),
+        ('08-refact', '08-fix'),
+        ('09-refact', '09-code-test'),
+        ('10-refact', '10-code-test'),
+        ('11-refact', '11-code-test'),
+        ('current', '2022-02')
+    ]
     return {
-        i: get_dataframes_dict_by_identifier(i)
-        for i in [
-            '01-command', '02-questions', '03-template', '04-adjusted', 
-            '05-fix', '06-fix', '07-fix', '08-fix', '09-code-test', 
-            '10-code-test', '11-code-test'
-        ]
+        t[0]: get_dataframes_dict_by_identifier(t[1])
+        for t in keys_and_identifiers
     }
 
 
